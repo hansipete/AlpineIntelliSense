@@ -28,11 +28,20 @@
     "contributes": {
         "snippets": [
             {
-                "language": "html",
+                "languages": [{
+                    "id": "html",
+                    "extensions": [ ".html", ".php", ".blade.php" ],
+                    "aliases": [ "HTML", "html", "Blade", "PHP", "php", "blade" ]
+                }],
                 "path": "./snippets/html.json"
             }
         ],
         "html": {
+            "customData": [
+                "./customData/html.json"
+            ]
+        },
+        "php": {
             "customData": [
                 "./customData/html.json"
             ]
